@@ -1,0 +1,136 @@
+$primarycolor: #EA442B;
+
+body {
+  background: white;
+}
+
+.order {
+  text-align: left;
+  margin: 2rem 0 1rem 21rem;
+}
+
+// Navbar css
+#sos-button {
+  background: #EA442B;
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-right: 2rem;
+  box-shadow: 0px 0px 20px 1px rgba(234, 68, 43, 1);
+}
+
+.card-media {
+  height: 300px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-icon {
+
+  width: 150px;
+  padding-top: 1rem;
+
+}
+
+// booking details css
+.left-text {
+  color: #979595;
+  text-align: left;
+  font-weight: bold !important;
+  padding-left: 1rem;
+}
+
+.right-text {
+  text-align: right;
+  color: black;
+  font-weight: bold !important;
+  padding-right: 1rem;
+}
+
+.confirm {
+  text-align: left;
+  margin: 1rem 0 2rem 19rem;
+  color: white;
+  background: rgb(246, 171, 47);
+  background: linear-gradient(94deg, rgba(246, 171, 47, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  padding: 1rem 0 1rem 2rem;
+  width: 50%;
+}
+
+.xyz {
+  .print-button {
+    text-transform: none !important;
+    color: #717171;
+    font-size: 20px !important;
+
+  }
+}
+
+
+
+.orderid {
+  background-color: $primarycolor;
+  color: white;
+  width: "50%" !important;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.orderdetails {
+  background-color: white;
+  color: #979595;
+  width: "50%" !important;
+  padding: 0.25rem 1rem;
+  font-weight: bold !important;
+  text-align: left !important;
+}
+
+.text-left-black {
+  color: black !important;
+  text-align: left !important;
+}
+
+.text-right-black {
+  color: black !important;
+  text-align: right !important;
+}
+
+.totalamount {
+  background-color: white;
+  color: #979595;
+  width: "50%" !important;
+  padding: 1rem;
+}
+
+.packagedetails {
+  background-color: #FBE8E9;
+  color: #979595;
+  width: "120%" !important;
+  padding: 1rem;
+  margin-bottom: "2rem";
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.button {
+  background-color: $primarycolor !important;
+  color: white !important;
+  width: 80%;
+  padding: 2rem !important;
+
+}
+
+.footerbutton {
+  color: $primarycolor !important;
+  border: solid 1px $primarycolor !important;
+  text-transform: none !important;
+  padding: 2rem !important;
+  font-size: 1.5rem !important;
+  margin: auto;
+}
