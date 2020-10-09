@@ -20,7 +20,9 @@ const Cancel = () => {
 
   return (
     <div className={classes.root}>
-      <AppNav />
+      <div className="nomobile">
+        <AppNav className="nomobile" />
+      </div>
       <Container maxWidth="lg">
         <CancelCard />
       </Container>

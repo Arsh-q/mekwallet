@@ -1,25 +1,16 @@
 import React from "react";
+
+// material ui components
 import Paper from "@material-ui/core/Paper";
-import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    "& > *": {
-      margin: "2rem auto",
-      width: "80%",
-      height: "auto",
-    },
-  },
-}));
-const BookingDetails = () => {
-  const classes = useStyles();
+import styles from "../Order/Order.module.css";
 
+const BookingDetails = () => {
   return (
-    <div className={classes.root}>
+    <div className={styles.orderdetailscard}>
       <Paper variant="outlined">
         <List>
           <ListItem>
@@ -27,7 +18,7 @@ const BookingDetails = () => {
               <Grid item xs={12}>
                 <Typography
                   gutterBottom
-                  className="orderdetails"
+                  className={styles.orderdetails}
                   variant="h5"
                   style={{
                     fontWeight: "bold",
@@ -46,7 +37,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails"
+                  className={styles.payment}
                   variant="h6"
                   style={{
                     color: "#979595",
@@ -61,6 +52,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
+                  className={styles.payment}
                   variant="h6"
                   style={{
                     textAlign: "right",
@@ -80,7 +72,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="left-text"
+                  className={styles.lefttext}
                   variant="h6"
                   component="h2"
                 >
@@ -90,7 +82,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="right-text"
+                  className={styles.righttext}
                   variant="h6"
                   component="h2"
                 >
@@ -105,7 +97,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="left-text"
+                  className={styles.lefttext}
                   variant="h6"
                   component="h2"
                 >
@@ -115,7 +107,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="right-text"
+                  className={styles.righttext}
                   variant="h6"
                   component="h2"
                 >
@@ -130,7 +122,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="left-text"
+                  className={styles.lefttext}
                   variant="h6"
                   component="h2"
                 >
@@ -140,7 +132,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="right-text"
+                  className={styles.righttext}
                   variant="h6"
                   component="h2"
                 >
@@ -155,7 +147,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="totalamount"
+                  className={styles.totalamount}
                   variant="h4"
                   style={{
                     color: "black",
@@ -170,7 +162,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="totalamount"
+                  className={styles.totalamount}
                   variant="h4"
                   style={{
                     textAlign: "right",
@@ -188,7 +180,7 @@ const BookingDetails = () => {
             <Grid container spacing={0}>
               <Grid item xs={12}>
                 <Typography
-                  className="packagedetails left-text"
+                  className={(styles.packagedetails, styles.lefttext)}
                   variant="h6"
                   component="h2"
                 >
@@ -201,7 +193,7 @@ const BookingDetails = () => {
             <Grid container spacing={0}>
               <Grid item xs={6}>
                 <Typography
-                  className="packagedetails"
+                  className={(styles.packagedetails, styles.lefttext)}
                   variant="h6"
                   style={{
                     color: "black",
@@ -215,7 +207,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="packagedetails"
+                  className={(styles.packagedetails, styles.lefttext)}
                   variant="h6"
                   style={{
                     textAlign: "right",
@@ -233,7 +225,7 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails"
+                  className={(styles.orderdetails, styles.payment)}
                   variant="h6"
                   style={{
                     fontWeight: "bold",
@@ -255,6 +247,7 @@ const BookingDetails = () => {
                     paddingRight: "1rem",
                   }}
                   component="h2"
+                  className={styles.payment}
                 >
                   Edit
                 </Typography>
@@ -266,7 +259,6 @@ const BookingDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails"
                   variant="h6"
                   style={{
                     color: "#747171",

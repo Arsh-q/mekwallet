@@ -137,4 +137,148 @@
   text-transform: none;
 }
 
-.tabHeader {}
+@media only screen and (max-width: 725px) {
+  .app {
+    background: white !important;
+    color: black !important;
+    margin-top: 0px;
+    margin-left: -1rem;
+    width: 110% !important;
+    margin-bottom: 1rem;
+  }
+
+  .underline {
+    margin-left: -1rem;
+    margin-top: -1rem;
+    margin: -1rem 0 1rem -1rem;
+  }
+
+  .gold {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background: transparent linear-gradient(124deg, #E8A628 0%, #EDAF4D 52%, #E8A628 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001A;
+    border: 1px solid #E8A628;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 2rem;
+  }
+
+  .silver {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background: transparent linear-gradient(126deg, #B4B4B4 0%, #C6C5C5 52%, #AFAFAF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000001A;
+    border: 1px solid #B7B7B7;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 2rem;
+  }
+
+  #rscircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent linear-gradient(136deg, #E8A628 0%, #EECF9E 20%, #F0A62E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  #rscirclesilver {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent linear-gradient(136deg, #FFFFFF 0%, #DEDEDE 29%, #A7A7A7 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+
+  }
+
+  #rsGold {
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    font-size: 38px;
+  }
+
+  .coins {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #amountCard {
+    background-color: white !important;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: 4rem auto;
+  }
+
+  .text {
+    width: 80% !important;
+  }
+
+  #rsMoney {
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #rsmoneyCircle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: transparent linear-gradient(136deg, #E8A628 0%, #EECF9E 20%, #F0A62E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #addbtn {
+    font-size: 18px;
+    background-color: #EA442B;
+    text-transform: none;
+    color: white;
+    width: 90%;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
+
+  .secondaryBtn {
+    background-color: white !important;
+    color: #EA442B !important;
+    text-transform: none !important;
+    font-size: 12px !important;
+    padding: 1rem 3rem !important;
+    width: 95% !important;
+  }
+
+  .tabs {
+    background-color: white !important;
+    height: auto;
+    width: 100%;
+    margin: 2rem auto;
+
+  }
+
+  #tabsApp {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    color: #EA442B;
+    text-transform: none;
+  }
+
+  .tabHeader {
+    width: 50% !important;
+  }
+
+}

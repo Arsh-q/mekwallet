@@ -1,4 +1,5 @@
 import React from "react";
+import "../Order/Order/Order.css";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -59,7 +60,7 @@ const AppNav = () => {
           <IconButton
             edge="start"
             className={classes.menuButton}
-            color="black"
+            // color=""
             aria-label="menu"
           >
             <MenuIcon fontSize="large" />

@@ -1,53 +1,46 @@
 import React from "react";
-import AppNav from "../AppNav/AppNav";
-
-import styles from "./MekCoins.module.css";
-import styling from "../Order/Order/Order.module.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import AppNav from "../AppNav/AppNav";
+
+import styles from "./Bookings.module.css";
+import BookingsTabs from "./BookingsTabs/BookingsTabs";
+import styling from "../Order/Order/Order.module.css";
+
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import AddCoinsCard from "./AddCoinsCard/AddCoinsCard";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
-
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     background: "white",
   },
 }));
-
-const theme = createMuiTheme({
-  palette: {
-    background: {
-      default: "white",
-    },
-  },
-});
-const MekCoins = () => {
+const Bookings = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <ThemeProvider theme={theme}>
-        <div className={styling.nomob}>
-          <AppNav />
-        </div>
+      <div className={styling.nomob}>
+        <AppNav />
+      </div>
+      <Container maxWidth="lg">
         <AppBar
           position="static"
           className={styling.nodesk}
-          style={{ background: "white" }}
+          style={{ background: "white", width: "112%", marginLeft: "-20px" }}
         >
           <Toolbar>
             <Typography
               variant="h6"
               style={{
                 flexGrow: 1,
+
                 color: "#EA442B",
                 fontWeight: "bold",
                 textAlign: "left",
@@ -71,27 +64,32 @@ const MekCoins = () => {
           </Toolbar>
         </AppBar>
         <Container maxWidth="lg" style={{ background: "f8f8f8" }}>
-          <AppBar position="static" className={styles.app}>
+          <AppBar position="static" className={styles.appbar}>
             <Toolbar>
-              <Typography variant="h6" style={{ fontWeight: "bold" }}>
-                MekCoins
+              <Typography
+                gutterBottom
+                className="reason mobile"
+                variant="h5"
+                style={{
+                  color: "black",
+                  textAlign: "left",
+                  fontWeight: "bold",
+                  paddingTop: "1rem",
+                }}
+                component="h2"
+              >
+                <Button variant="default" className={styles.arrow}>
+                  <ArrowBackIcon style={{ marginBottom: "2px" }} />
+                </Button>
+                Bookings
               </Typography>
             </Toolbar>
           </AppBar>
-          <div
-            style={{
-              background: "#EAA937",
-              width: "40%",
-              height: "5px",
-              boxShadow: "0px 3px 6px #00000029",
-            }}
-            className={styles.underline}
-          ></div>
-          <AddCoinsCard />
+          <BookingsTabs />
         </Container>
-      </ThemeProvider>
+      </Container>
     </div>
   );
 };
 
-export default MekCoins;
+export default Bookings;

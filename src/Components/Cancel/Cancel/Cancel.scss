@@ -6,6 +6,10 @@
   margin-top: 1px;
 }
 
+.mob-nav {
+  display: block;
+}
+
 .canceldetails {
   background-color: white;
   color: #979595;
@@ -30,9 +34,65 @@ hr {
   text-transform: none !important;
   padding: 2rem 8rem !important;
   font-size: 20px !important;
+  width: 80% !important;
 }
 
 .btnColor {
   background: red !important;
+}
 
+.okok {
+  color: red !important;
+}
+
+@media only screen and (max-width: 725px) {
+  .paper {
+    background-color: white !important;
+    height: auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .redarea {
+    width: 100% !important;
+    padding: 1rem !important;
+    font-size: 8px !important;
+  }
+
+  .nomobile {
+    display: none !important;
+  }
+
+  .btn {
+    padding: 0.5rem !important;
+    font-size: 16px !important;
+    width: 80% !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .smalltxt {
+    font-size: 14px !important;
+  }
+
+  .mobile {
+    font-size: 16px !important;
+    padding: 0 !important;
+    margin-left: -2rem !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .mobile-icon {
+    font-size: 3rem !important;
+    padding: 1rem 0.5rem !important;
+  }
+
+  .mobList {
+    width: 95% !important;
+  }
+
+  .amount {
+    margin-left: -1rem !important;
+
+  }
 }

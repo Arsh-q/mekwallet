@@ -7,13 +7,14 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import WarningIcon from "@material-ui/icons/Warning";
 import Button from "@material-ui/core/Button";
-import "../Cancel/Cancel.css";
+import "../Cancel/Cancel.scss";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 const useStyles = makeStyles((theme) => ({
   root: {
     // display: "flex",
     "& > *": {
-      margin: "0rem auto 2rem auto",
-      width: "80%",
+      margin: "0rem auto 1rem auto",
       height: "auto",
     },
   },
@@ -30,23 +31,32 @@ const CancelCard = () => {
   return (
     <div>
       <Paper component="div" className="paper">
-        <div className={classes.root} style={{ paddingLeft: "" }}>
+        <div className={classes.root}>
           <Typography
             gutterBottom
-            className="reason"
+            className="reason mobile"
             variant="h5"
             style={{
               color: "black",
               textAlign: "left",
               fontWeight: "bold",
+              paddingTop: "1rem",
             }}
             component="h2"
           >
+            <Button variant="default" style={{ marginLeft: "1rem" }}>
+              <ArrowBackIcon style={{ marginBottom: "2px" }} />
+            </Button>
             Reason for cancellation
           </Typography>
-          <Paper variant="outlined">
+          <Paper
+            variant="outlined"
+            style={{ width: "80%" }}
+            className="mobList"
+          >
             <List>
               <ListItem
+                className="redarea"
                 style={{
                   padding: "3rem",
                   background: "#FBEDED",
@@ -59,47 +69,50 @@ const CancelCard = () => {
                     <Grid item xs={2}>
                       <Typography style={{ textAlign: "center" }}>
                         <WarningIcon
+                          className="mobile-icon"
                           style={{ color: "#F6AB2F", fontSize: "5rem" }}
                         />
                       </Typography>
                     </Grid>
-                    <Grid item xs={6}>
+                    <Grid item xs={7}>
                       <Typography
-                        className=""
+                        className="smalltxt"
                         variant="h6"
                         style={{
                           fontWeight: "bold",
                           textAlign: "left",
-                          paddingTop: "1rem",
+                          paddingTop: "1.1rem",
+                          paddingLeft: "0.5rem",
                         }}
                         component="h2"
                       >
-                        Order ID ##1600437394
+                        Order ID #1600437394
                       </Typography>
                       <Typography
-                        className=""
+                        className="smalltxt"
                         variant="h6"
                         style={{
                           textAlign: "left",
+                          paddingLeft: "0.5rem",
                         }}
                         component="h2"
                       >
                         2020-09-17 / 19:20
                       </Typography>
                     </Grid>
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                       <Typography
-                        className=""
+                        className="smalltxt amount"
                         variant="h5"
                         style={{
                           fontWeight: "bold",
                           textAlign: "center",
                           paddingTop: "2rem",
-                          paddingRight: "1rem",
+                          paddingRight: "2rem",
                         }}
                         component="h2"
                       >
-                        &#8377; 5625.0
+                        &#8377;5625.0
                       </Typography>
                     </Grid>
                   </Grid>
@@ -110,7 +123,7 @@ const CancelCard = () => {
                 <Grid container className="reason">
                   <Grid item xs={12}>
                     <Typography
-                      className="orderdetails text-left-black"
+                      className="orderdetails text-left-black mobile"
                       variant="h6"
                       component="h2"
                       onClick={(e) => {
@@ -128,7 +141,7 @@ const CancelCard = () => {
                   <Grid item xs={12}>
                     <Typography
                       gutterBottom
-                      className="orderdetails text-left-black"
+                      className="orderdetails text-left-black mobile"
                       variant="h6"
                       component="h2"
                     >
@@ -143,25 +156,14 @@ const CancelCard = () => {
                   <Grid item xs={11}>
                     <Typography
                       gutterBottom
-                      className="orderdetails text-left-black"
+                      className="orderdetails text-left-black mobile"
                       variant="h6"
                       component="h2"
                     >
                       Expected a shorter wait time
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={1}>
-                    <Typography
-                      gutterBottom
-                      className="orderdetails"
-                      variant="h6"
-                      style={{
-                        textAlign: "right",
-                        color: "black",
-                      }}
-                      component="h2"
-                    >
-                      >
+                      <span style={{ float: "right", marginBottom: "-30px" }}>
+                        <ChevronRightIcon />
+                      </span>
                     </Typography>
                   </Grid>
                 </Grid>
@@ -172,7 +174,7 @@ const CancelCard = () => {
                   <Grid item xs={12}>
                     <Typography
                       gutterBottom
-                      className="orderdetails text-left-black"
+                      className="orderdetails text-left-black mobile"
                       variant="h6"
                       component="h2"
                     >
@@ -187,25 +189,14 @@ const CancelCard = () => {
                   <Grid item xs={11}>
                     <Typography
                       gutterBottom
-                      className="orderdetails text-left-black"
+                      className="orderdetails text-left-black mobile"
                       variant="h6"
                       component="h2"
                     >
                       Need to apply coupon
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={1}>
-                    <Typography
-                      gutterBottom
-                      className="orderdetails"
-                      variant="h6"
-                      style={{
-                        textAlign: "right",
-                        color: "black",
-                      }}
-                      component="h2"
-                    >
-                      >
+                      <span style={{ float: "right", marginBottom: "-30px" }}>
+                        <ChevronRightIcon />
+                      </span>
                     </Typography>
                   </Grid>
                 </Grid>
@@ -216,7 +207,7 @@ const CancelCard = () => {
                   <Grid item xs={12}>
                     <Typography
                       gutterBottom
-                      className="orderdetails text-left-black"
+                      className="orderdetails text-left-black mobile"
                       variant="h6"
                       component="h2"
                     >
@@ -227,14 +218,14 @@ const CancelCard = () => {
               </ListItem>
             </List>
           </Paper>
-          <Grid container>
+          <Grid container style={{ textAlign: "center" }}>
             <Grid item xs={6}>
               <Button variant="contained" className="btn" id="cancelbtn">
                 Cancel
               </Button>
             </Grid>
             <Grid item xs={6}>
-              <Button variant="contained" className="btn">
+              <Button variant="contained" className="btn" id="cancelbtn">
                 Don't cancel
               </Button>
             </Grid>

@@ -1,7 +1,7 @@
 import React from "react";
 
 // css
-import "../Profile/Profile.css";
+import "../Profile/Profile.scss";
 
 // material ui components
 import Card from "@material-ui/core/Card";
@@ -19,6 +19,7 @@ import CreateIcon from "@material-ui/icons/Create";
 import PhoneIcon from "@material-ui/icons/Phone";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import AttachmentIcon from "@material-ui/icons/Attachment";
+
 const ProfileCard = () => {
   return (
     <Paper component="div" className="paper">
@@ -30,7 +31,7 @@ const ProfileCard = () => {
           <CardMedia
             id="profile-card-img"
             image="https://picsum.photos/200/300"
-            title="Contemplative Reptile"
+            title="User image"
           />
           <Typography variant="h6" id="name">
             Hello, Alex!

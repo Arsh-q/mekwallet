@@ -2,6 +2,7 @@ $primarycolor: #EA442B;
 
 body {
   background: white;
+  overflow-x: hidden !important;
 }
 
 .order {
@@ -20,29 +21,30 @@ body {
   box-shadow: 0px 0px 20px 1px rgba(234, 68, 43, 1);
 }
 
-.card-media {
+.cardmedia {
   height: 300px;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.footer-icon {
+.footericon {
 
   width: 150px;
   padding-top: 1rem;
+  padding-left: 1rem;
 
 }
 
 // booking details css
-.left-text {
+.lefttext {
   color: #979595;
   text-align: left;
   font-weight: bold !important;
   padding-left: 1rem;
 }
 
-.right-text {
+.righttext {
   text-align: right;
   color: black;
   font-weight: bold !important;
@@ -60,14 +62,13 @@ body {
 }
 
 .xyz {
-  .print-button {
+  .printbutton {
     text-transform: none !important;
     color: #717171;
     font-size: 20px !important;
-
+    margin-left: -3rem;
   }
 }
-
 
 
 .orderid {
@@ -87,12 +88,12 @@ body {
   text-align: left !important;
 }
 
-.text-left-black {
+.textleftblack {
   color: black !important;
   text-align: left !important;
 }
 
-.text-right-black {
+.textrightblack {
   color: black !important;
   text-align: right !important;
 }
@@ -121,7 +122,7 @@ hr {
 .button {
   background-color: $primarycolor !important;
   color: white !important;
-  width: 80%;
+  width: 90%;
   padding: 2rem !important;
 
 }
@@ -130,7 +131,198 @@ hr {
   color: $primarycolor !important;
   border: solid 1px $primarycolor !important;
   text-transform: none !important;
-  padding: 2rem !important;
+  padding: 1rem !important;
   font-size: 1.5rem !important;
   margin: auto;
+}
+
+.nodesk {
+  display: none !important;
+}
+
+// .nomob {
+//   display: block !important;
+// }
+
+.card {
+  max-width: 80%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orderdetailscard {
+  margin: 0rem auto;
+  width: 90%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 725px) {
+  .paper {
+    background-color: white !important;
+    height: auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .nomob {
+    display: none !important;
+  }
+
+  .nodesk {
+    display: block !important;
+  }
+
+  #sosbutton {
+    background: #EA442B;
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-right: 2rem;
+    box-shadow: 0px 0px 20px 1px rgba(234, 68, 43, 1);
+  }
+
+  .order {
+    text-align: left;
+    margin: 2rem 0 1rem 1rem;
+    font-size: 16px !important;
+  }
+
+  .confirm {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem !important;
+    color: white;
+    background: rgb(246, 171, 47);
+    background: linear-gradient(94deg, rgba(246, 171, 47, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .xyz {
+    .printbutton {
+      display: none !important;
+    }
+  }
+
+  .card {
+    max-width: 90%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .title {
+    color: #979595;
+    padding: 0;
+  }
+
+  .cardmedia {
+    height: 100px;
+    width: 300px;
+    margin: 2rem 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .phonetxt {
+    font-size: 14px !important;
+  }
+
+  .orderid {
+    display: none !important;
+  }
+
+  .orderdetails {
+    background-color: white;
+    color: #979595;
+    width: 100% !important;
+    padding: 0;
+    font-weight: bold !important;
+    text-align: left !important;
+    font-size: 1.5rem !important;
+  }
+
+  .textleftblack {
+    color: black !important;
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+
+  .textrightblack {
+    color: black !important;
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+
+  .orderdetailscard {
+    margin: 0rem auto;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .payment {
+    font-size: 1rem !important;
+  }
+
+  .lefttext {
+    color: #979595;
+    text-align: left;
+    font-weight: bold !important;
+    padding-left: 0;
+    font-size: 1rem !important;
+  }
+
+  .righttext {
+    text-align: right;
+    color: black;
+    font-weight: bold !important;
+    padding-right: 0;
+    font-size: 1rem !important;
+
+  }
+
+  .totalamount {
+    background-color: white;
+    color: #979595;
+    width: "50%" !important;
+    padding: 0;
+    font-size: 1rem !important;
+  }
+
+  .packagedetails {
+    background-color: #FBE8E9;
+    color: #979595;
+    width: "120%" !important;
+    padding: 0;
+    font-size: 1.5rem !important;
+    margin-bottom: "2rem";
+  }
+
+  .button {
+    background-color: $primarycolor !important;
+    color: white !important;
+    width: 100%;
+    padding: 1rem !important;
+  }
+
+  .footericon {
+
+    width: 80px;
+    padding-top: 2rem;
+    float: right;
+  }
+
+  .footerbutton {
+    color: $primarycolor !important;
+    border: solid 1px $primarycolor !important;
+    text-transform: none !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    margin: auto;
+  }
 }

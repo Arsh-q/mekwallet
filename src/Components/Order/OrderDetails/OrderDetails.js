@@ -1,26 +1,14 @@
 import React from "react";
 import Paper from "@material-ui/core/Paper";
-import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-    "& > *": {
-      margin: "0rem auto",
-      width: "80%",
-      height: "auto",
-    },
-  },
-}));
+import styles from "../Order/Order.module.css";
 
 const OrderDetails = () => {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
+    <div className={styles.orderdetailscard}>
       <Paper variant="outlined">
         <List>
           <ListItem>
@@ -28,7 +16,7 @@ const OrderDetails = () => {
               <Grid item xs={12}>
                 <Typography
                   gutterBottom
-                  className="orderdetails"
+                  className={styles.orderdetails}
                   variant="h5"
                   component="h2"
                 >
@@ -43,7 +31,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-left-black"
+                  className={(styles.orderdetails, styles.textleftblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -53,7 +41,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-right-black"
+                  className={(styles.orderdetails, styles.textrightblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -68,7 +56,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-left-black"
+                  className={(styles.orderdetails, styles.textleftblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -78,7 +66,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-right-black"
+                  className={(styles.orderdetails, styles.textrightblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -94,7 +82,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-left-black"
+                  className={(styles.orderdetails, styles.textleftblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -104,7 +92,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-right-black"
+                  className={(styles.orderdetails, styles.textrightblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -120,7 +108,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-left-black"
+                  className={(styles.orderdetails, styles.textleftblack)}
                   variant="h6"
                   component="h2"
                 >
@@ -130,7 +118,7 @@ const OrderDetails = () => {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  className="orderdetails text-right-black"
+                  className={(styles.orderdetails, styles.textrightblack)}
                   variant="h6"
                   component="h2"
                 >

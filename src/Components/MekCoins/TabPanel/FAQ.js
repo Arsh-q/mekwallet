@@ -95,6 +95,8 @@ const FAQ = () => {
               label="FAQ"
               {...a11yProps(1)}
               style={{ textTransform: "none" }}
+              className={styles.tabHeader}
+
             />
           </Tabs>
         </AppBar>

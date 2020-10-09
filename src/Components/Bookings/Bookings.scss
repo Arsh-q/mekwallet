@@ -1,0 +1,201 @@
+.nomobile {
+  display: none !important;
+}
+
+.arrow {
+  margin-left: -3rem !important;
+}
+
+.paper {
+  background-color: #F6F6F6;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 1px;
+}
+
+.appbar {
+  background: white !important;
+  color: black !important;
+  margin-top: 0px;
+}
+
+.tabs {
+  color: white !important;
+  background: #DB3F28;
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.icon {
+  color: #DB3F28;
+  background: white;
+  border-radius: 50%;
+  padding: 0.1rem;
+  margin-bottom: -5px;
+}
+
+.card {
+  background-color: #F6F6F6 !important;
+  margin-bottom: 1rem;
+}
+
+.header {
+  background: #ABB2BA !important;
+}
+
+.details {
+  padding: 1rem;
+  font-weight: bold !important;
+}
+
+.driveIcon {
+  color: #DB3F28;
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+  border: solid 1px black;
+  font-size: 2rem !important;
+  margin-bottom: -10px;
+}
+
+.id {
+  width: 100%;
+  background: white !important;
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.detailsSecondary1 {
+  padding-left: 2rem;
+  color: #ABB2BA;
+}
+
+.detailsSecondary2 {
+  text-align: right;
+  color: #DB3F28;
+  font-weight: 100 !important;
+}
+
+.btn1 {
+  width: 90%;
+  background: #DB3F28 !important;
+  color: white !important;
+  text-transform: none !important;
+  font-size: 1.5rem !important;
+}
+
+.btn2 {
+  width: 90%;
+  background: #5C636B !important;
+  color: white !important;
+  text-transform: none !important;
+  font-size: 1.5rem !important;
+}
+
+@media only screen and (max-width: 725px) {
+
+  .nomobile {
+    display: none !important;
+  }
+
+
+  .mobile {
+    font-size: 16px !important;
+    padding: 0 !important;
+    margin-left: -2rem !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .appbar {
+    background: white !important;
+    color: black !important;
+    margin-top: 0px;
+    margin-left: -2.2rem;
+    width: 122% !important;
+    margin-bottom: 1rem;
+  }
+
+  .arrow {
+    margin-left: 0rem !important;
+  }
+
+  .heading {
+    font-size: 10px;
+    text-transform: none;
+    font-weight: bold;
+  }
+
+  .icon {
+    color: #DB3F28;
+    background: white;
+    border-radius: 50%;
+    padding: 0.1rem;
+    margin-bottom: -2px;
+    font-size: 12px !important;
+  }
+
+  .card {
+    background-color: #F6F6F6 !important;
+    margin-bottom: 1rem;
+    width: 100% !important;
+  }
+
+  .smalltxt {
+    font-size: 1rem !important;
+    padding: 0.5rem;
+    font-weight: bold !important;
+  }
+
+  .driveIcon {
+    color: #DB3F28;
+    background: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+    border: solid 1px black;
+    font-size: 1rem !important;
+    margin-bottom: -10px;
+  }
+
+  .detailsSecondary1 {
+    padding-left: 2rem;
+    color: #ABB2BA;
+    font-size: 1rem !important;
+  }
+
+  .detailsSecondary2 {
+    text-align: right;
+    color: #DB3F28;
+    font-weight: 100 !important;
+    font-size: 12px !important;
+  }
+
+  .btn1 {
+    width: 90%;
+    background: #DB3F28 !important;
+    color: white !important;
+    text-transform: none !important;
+    font-size: 1rem !important;
+  }
+
+  .btn2 {
+    width: 90%;
+    background: #5C636B !important;
+    color: white !important;
+    text-transform: none !important;
+    font-size: 1rem !important;
+  }
+
+  .confirm {
+    font-size: 1rem !important;
+  }
+}
