@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import AmountCard from "../AmountCard/AmountCard";
 import FAQ from "../TabPanel/FAQ";
 
-const AddCoinsCard = (props) => {
+const AddCoinsCardGold = () => {
   return (
     <Paper component="div" className={styles.paper}>
       <Grid container spacing={3}>
@@ -40,10 +40,10 @@ const AddCoinsCard = (props) => {
           </Paper>
         </Grid>
       </Grid>
-      <AmountCard coin={props.coin} />
+      <AmountCard />
       <FAQ />
     </Paper>
   );
 };
 
-export default AddCoinsCard;
+export default AddCoinsCardGold;

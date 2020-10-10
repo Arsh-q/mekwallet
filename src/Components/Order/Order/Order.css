@@ -1,1 +1,289 @@
-body{background:white}.order{text-align:left;margin:2rem 0 1rem 21rem}#sos-button{background:#EA442B;color:white;border-radius:50%;padding:1rem;font-size:1rem;margin-right:2rem;box-shadow:0px 0px 20px 1px #ea442b}.card-media{height:300px;width:500px;margin-left:auto;margin-right:auto}.footer-icon{width:150px;padding-top:1rem}.left-text{color:#979595;text-align:left;font-weight:bold !important;padding-left:1rem}.right-text{text-align:right;color:black;font-weight:bold !important;padding-right:1rem}.confirm{text-align:left;margin:1rem 0 2rem 19rem;color:white;background:#f6ab2f;background:linear-gradient(94deg, #f6ab2f 0%, #fff 100%);padding:1rem 0 1rem 2rem;width:50%}.xyz .print-button{text-transform:none !important;color:#717171;font-size:20px !important}.orderid{background-color:#EA442B;color:white;width:"50%" !important;padding:1rem;margin-top:4rem}.orderdetails{background-color:white;color:#979595;width:"50%" !important;padding:0.25rem 1rem;font-weight:bold !important;text-align:left !important}.text-left-black{color:black !important;text-align:left !important}.text-right-black{color:black !important;text-align:right !important}.totalamount{background-color:white;color:#979595;width:"50%" !important;padding:1rem}.packagedetails{background-color:#FBE8E9;color:#979595;width:"120%" !important;padding:1rem;margin-bottom:"2rem"}hr{height:1px;background-color:#ccc;border:none}.button{background-color:#EA442B !important;color:white !important;width:80%;padding:2rem !important}.footerbutton{color:#EA442B !important;border:solid 1px #EA442B !important;text-transform:none !important;padding:2rem !important;font-size:1.5rem !important;margin:auto}
+body {
+  background: white;
+  overflow-x: hidden !important;
+}
+
+.order {
+  text-align: left;
+  margin: 2rem 0 1rem 21rem;
+}
+
+#sos-button {
+  background: #EA442B;
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-right: 2rem;
+  -webkit-box-shadow: 0px 0px 20px 1px #ea442b;
+          box-shadow: 0px 0px 20px 1px #ea442b;
+}
+
+.cardmedia {
+  height: 300px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footericon {
+  width: 150px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.lefttext {
+  color: #979595;
+  text-align: left;
+  font-weight: bold !important;
+  padding-left: 1rem;
+}
+
+.righttext {
+  text-align: right;
+  color: black;
+  font-weight: bold !important;
+  padding-right: 1rem;
+}
+
+.confirm {
+  text-align: left;
+  margin: 1rem 0 2rem 19rem;
+  color: white;
+  background: #f6ab2f;
+  background: linear-gradient(94deg, #f6ab2f 0%, white 100%);
+  padding: 1rem 0 1rem 2rem;
+  width: 50%;
+}
+
+.xyz .printbutton {
+  text-transform: none !important;
+  color: #717171;
+  font-size: 20px !important;
+  margin-left: -3rem;
+}
+
+.orderid {
+  background-color: #EA442B;
+  color: white;
+  width: "50%" !important;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.orderdetails {
+  background-color: white;
+  color: #979595;
+  width: "50%" !important;
+  padding: 0.25rem 1rem;
+  font-weight: bold !important;
+  text-align: left !important;
+}
+
+.textleftblack {
+  color: black !important;
+  text-align: left !important;
+}
+
+.textrightblack {
+  color: black !important;
+  text-align: right !important;
+}
+
+.totalamount {
+  background-color: white;
+  color: #979595;
+  width: "50%" !important;
+  padding: 1rem;
+}
+
+.packagedetails {
+  background-color: #FBE8E9;
+  color: #979595;
+  width: "120%" !important;
+  padding: 1rem;
+  margin-bottom: "2rem";
+}
+
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+.button {
+  background-color: #EA442B !important;
+  color: white !important;
+  width: 90%;
+  padding: 2rem !important;
+}
+
+.footerbutton {
+  color: #EA442B !important;
+  border: solid 1px #EA442B !important;
+  text-transform: none !important;
+  padding: 1rem !important;
+  font-size: 1.5rem !important;
+  margin: auto;
+}
+
+.nodesk {
+  display: none !important;
+}
+
+.card {
+  max-width: 80%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.orderdetailscard {
+  margin: 0rem auto;
+  width: 90%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 725px) {
+  .paper {
+    background-color: white !important;
+    height: auto;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .nomob {
+    display: none !important;
+  }
+  .nodesk {
+    display: block !important;
+  }
+  #sosbutton {
+    background: #EA442B;
+    color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-right: 2rem;
+    -webkit-box-shadow: 0px 0px 20px 1px #ea442b;
+            box-shadow: 0px 0px 20px 1px #ea442b;
+  }
+  .order {
+    text-align: left;
+    margin: 2rem 0 1rem 1rem;
+    font-size: 16px !important;
+  }
+  .confirm {
+    text-align: left;
+    margin: 0;
+    font-size: 1rem !important;
+    color: white;
+    background: #f6ab2f;
+    background: linear-gradient(94deg, #f6ab2f 0%, white 100%);
+    padding: 1rem;
+    width: 100%;
+  }
+  .xyz .printbutton {
+    display: none !important;
+  }
+  .card {
+    max-width: 90%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    color: #979595;
+    padding: 0;
+  }
+  .cardmedia {
+    height: 100px;
+    width: 300px;
+    margin: 2rem 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .phonetxt {
+    font-size: 14px !important;
+  }
+  .orderid {
+    display: none !important;
+  }
+  .orderdetails {
+    background-color: white;
+    color: #979595;
+    width: 100% !important;
+    padding: 0;
+    font-weight: bold !important;
+    text-align: left !important;
+    font-size: 1.5rem !important;
+  }
+  .textleftblack {
+    color: black !important;
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+  .textrightblack {
+    color: black !important;
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+  .orderdetailscard {
+    margin: 0rem auto;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  .payment {
+    font-size: 1rem !important;
+  }
+  .lefttext {
+    color: #979595;
+    text-align: left;
+    font-weight: bold !important;
+    padding-left: 0;
+    font-size: 1rem !important;
+  }
+  .righttext {
+    text-align: right;
+    color: black;
+    font-weight: bold !important;
+    padding-right: 0;
+    font-size: 1rem !important;
+  }
+  .totalamount {
+    background-color: white;
+    color: #979595;
+    width: "50%" !important;
+    padding: 0;
+    font-size: 1rem !important;
+  }
+  .packagedetails {
+    background-color: #FBE8E9;
+    color: #979595;
+    width: "120%" !important;
+    padding: 0;
+    font-size: 1.5rem !important;
+    margin-bottom: "2rem";
+  }
+  .button {
+    background-color: #EA442B !important;
+    color: white !important;
+    width: 100%;
+    padding: 1rem !important;
+  }
+  .footericon {
+    width: 80px;
+    padding-top: 2rem;
+    float: right;
+  }
+  .footerbutton {
+    color: #EA442B !important;
+    border: solid 1px #EA442B !important;
+    text-transform: none !important;
+    padding: 1rem !important;
+    font-size: 1rem !important;
+    margin: auto;
+  }
+}
+/*# sourceMappingURL=Order.css.map */

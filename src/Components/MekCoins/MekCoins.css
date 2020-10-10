@@ -1,1 +1,318 @@
-.appbar{background:white !important;color:black !important;margin-top:0px}
+.app {
+  background: white !important;
+  color: black !important;
+  margin-top: 0px;
+}
+
+.paper {
+  background-color: #f8f8f8 !important;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 1px;
+}
+
+.reward {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  color: red;
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 2rem auto;
+  -webkit-box-shadow: 5px 5px 13px grey;
+          box-shadow: 5px 5px 13px grey;
+}
+
+.gold {
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+  background: transparent linear-gradient(124deg, #e8a628 0%, #edaf4d 52%, #e8a628 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #0000001a;
+          box-shadow: 0px 3px 6px #0000001a;
+  border: 1px solid #e8a628;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 2rem;
+}
+
+.silver {
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+  background: transparent linear-gradient(126deg, #b4b4b4 0%, #c6c5c5 52%, #afafaf 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #0000001a;
+          box-shadow: 0px 3px 6px #0000001a;
+  border: 1px solid #b7b7b7;
+  border-radius: 6px;
+  opacity: 1;
+  padding: 2rem;
+}
+
+#rscircle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: transparent linear-gradient(136deg, #e8a628 0%, #eecf9e 20%, #f0a62e 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#rscirclesilver {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: transparent linear-gradient(136deg, #ffffff 0%, #dedede 29%, #a7a7a7 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#rsGold {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.coins {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#amountCard {
+  background-color: white !important;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 50%;
+  margin: 4rem auto;
+}
+
+.text {
+  width: 90% !important;
+}
+
+#rsMoney {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#rsmoneyCircle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: transparent linear-gradient(136deg, #e8a628 0%, #eecf9e 20%, #f0a62e 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+#addbtn {
+  font-size: 25px;
+  background-color: #ea442b;
+  text-transform: none;
+  color: white;
+  width: 90%;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.secondaryBtn {
+  background-color: white !important;
+  color: #ea442b !important;
+  text-transform: none !important;
+  font-size: 22px !important;
+  padding: 1rem 3rem !important;
+  width: 50% !important;
+}
+
+.tabs {
+  background-color: white !important;
+  height: auto;
+  width: 75%;
+  margin: 2rem auto;
+}
+
+#tabsApp {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: #ea442b;
+  text-transform: none;
+}
+
+@media only screen and (max-width: 725px) {
+  .app {
+    background: white !important;
+    color: black !important;
+    margin-top: 0px;
+    margin-left: -1rem;
+    width: 110% !important;
+    margin-bottom: 1rem;
+  }
+  .underline {
+    margin-left: -1rem;
+    margin-top: -1rem;
+    margin: -1rem 0 1rem -1rem;
+  }
+  .gold {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background: transparent linear-gradient(124deg, #e8a628 0%, #edaf4d 52%, #e8a628 100%) 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 6px #0000001a;
+            box-shadow: 0px 3px 6px #0000001a;
+    border: 1px solid #e8a628;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 2rem;
+  }
+  .silver {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background: transparent linear-gradient(126deg, #b4b4b4 0%, #c6c5c5 52%, #afafaf 100%) 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 6px #0000001a;
+            box-shadow: 0px 3px 6px #0000001a;
+    border: 1px solid #b7b7b7;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 2rem;
+  }
+  #rscircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent linear-gradient(136deg, #e8a628 0%, #eecf9e 20%, #f0a62e 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #rscirclesilver {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: transparent linear-gradient(136deg, #ffffff 0%, #dedede 29%, #a7a7a7 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #rsGold {
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    font-size: 38px;
+  }
+  .coins {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #amountCard {
+    background-color: white !important;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 90%;
+    margin: 4rem auto;
+  }
+  .text {
+    width: 80% !important;
+  }
+  #rsMoney {
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #rsmoneyCircle {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: transparent linear-gradient(136deg, #e8a628 0%, #eecf9e 20%, #f0a62e 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  #addbtn {
+    font-size: 18px;
+    background-color: #ea442b;
+    text-transform: none;
+    color: white;
+    width: 90%;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+  }
+  .secondaryBtn {
+    background-color: white !important;
+    color: #ea442b !important;
+    text-transform: none !important;
+    font-size: 12px !important;
+    padding: 1rem 3rem !important;
+    width: 95% !important;
+  }
+  .tabs {
+    background-color: white !important;
+    height: auto;
+    width: 100%;
+    margin: 2rem auto;
+  }
+  #tabsApp {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    color: #ea442b;
+    text-transform: none;
+  }
+  .tabHeader {
+    width: 50% !important;
+  }
+}
+/*# sourceMappingURL=MekCoins.css.map */

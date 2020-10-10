@@ -9,60 +9,86 @@ import Typography from "@material-ui/core/Typography";
 import { Link } from "@reach/router";
 import Button from "@material-ui/core/Button";
 
-const AmountCard = () => {
+const AmountCard = (props) => {
   return (
     <div className="">
-      <Paper component="div" id={styles.amountCard}>
-        <Grid container>
-          <Grid xs={12}>
-            <TextField
-              type="number"
-              id="standard-basic-lg"
-              label="Enter Amount"
-              className={styles.text}
-              style={{ textAlign: "center", marginLeft: "2rem" }}
-            />
-            <Typography
-              variant="subtitle1"
-              style={{ textAlign: "center", margin: "1rem 0" }}
-            >
-              <Link to="#" style={{ color: "#ED1C24" }}>
-                Have a promocode?
-              </Link>
-            </Typography>
-            <Grid container spacing={3}>
-              <Grid item xs={4}>
-                <Button id={styles.rsmoneyCircle}>
-                  <div id={styles.rsMoney}>500</div>
-                </Button>
-              </Grid>
-              <Grid item xs={4}>
-                <Button id={styles.rsmoneyCircle}>
-                  <div id={styles.rsMoney}>1000</div>
-                </Button>
-              </Grid>
-              <Grid item xs={4}>
-                <Button id={styles.rsmoneyCircle}>
-                  <div id={styles.rsMoney}>2000</div>
-                </Button>
+      {props.coin === "gold" ? (
+        <>
+          <Paper component="div" id={styles.amountCard}>
+            <Grid container>
+              <Grid xs={12}>
+                <TextField
+                  type="number"
+                  id="standard-basic-lg"
+                  label="Enter Amount"
+                  className={styles.text}
+                  style={{ textAlign: "center", marginLeft: "2rem" }}
+                />
+                <Typography
+                  variant="subtitle1"
+                  style={{ textAlign: "center", margin: "1rem 0" }}
+                >
+                  <Link to="#" style={{ color: "#ED1C24" }}>
+                    Have a promocode?
+                  </Link>
+                </Typography>
+                <Grid container spacing={3}>
+                  <Grid item xs={4}>
+                    <Button id={styles.rsmoneyCircle}>
+                      <div id={styles.rsMoney}>500</div>
+                    </Button>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Button id={styles.rsmoneyCircle}>
+                      <div id={styles.rsMoney}>1000</div>
+                    </Button>
+                  </Grid>
+                  <Grid item xs={4}>
+                    <Button id={styles.rsmoneyCircle}>
+                      <div id={styles.rsMoney}>2000</div>
+                    </Button>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
+            <div style={{ textAlign: "center" }}>
+              <Button variant="contained" id={styles.addbtn}>
+                Add Money
+              </Button>
+            </div>
+            <Typography
+              variant="subtitle2"
+              style={{ textAlign: "center", padding: "1rem" }}
+            >
+              <Link to="#" style={{ color: "#ED1C24" }}>
+                How to earn coins?
+              </Link>
+            </Typography>
+          </Paper>
+        </>
+      ) : (
+        <>
+          <Grid container>
+            <div
+              className="reward"
+              style={{
+                display: "flex",
+                justifyContent: "space-evenly",
+                alignItems: "center",
+                width: "80%",
+                color: "red",
+                backgroundColor: "lightgray",
+                borderRadius: "5px",
+                margin: "2rem auto",
+                boxShadow: "5px 5px 13px grey",
+              }}
+            >
+              <h1>Rewards</h1>
+              <h2>Rs. 0</h2>
+            </div>
           </Grid>
-        </Grid>
-        <div style={{ textAlign: "center" }}>
-          <Button variant="contained" id={styles.addbtn}>
-            Add Money
-          </Button>
-        </div>
-        <Typography
-          variant="subtitle2"
-          style={{ textAlign: "center", padding: "1rem" }}
-        >
-          <Link to="#" style={{ color: "#ED1C24" }}>
-            How to earn coins?
-          </Link>
-        </Typography>
-      </Paper>
+        </>
+      )}
       <Grid container>
         <Grid xs={6}>
           <Button
